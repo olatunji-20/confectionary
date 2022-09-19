@@ -1,19 +1,26 @@
 <template>
-    <div>
-        <h3>All-in-one <span style="color: tomato">Cloud Software.</span></h3>
+    <div class="life">
+        <h2>All-in-one <span style="color: tomato">Cloud Software.</span></h2>
         <p>Contentionary is one powerful online software suite that combines all</p>
         <p>the tools needed to run a successful school or office.</p>
         <section class="cal">
             <div class="bill">
                 <div class="round"></div>
+                <h3>Online Billing, invoicing & Contracts</h3>
+                <p>Simple and secure control of your organization's financial and legal transactions. Send customized invoices and contracts.</p>
             </div>
 
             <div class="bill">
                 <div class="round"></div>
+                <h3>Easy Scheduling & Attendance Tracking</h3>
+                <p>Sheduling and reserve classrooms at one campus or multiple campuses, Keep detailed records of student attendance.</p>
+            
             </div>
 
             <div class="bill">
                 <div class="round"></div>
+                <h3>Customer Tracking</h3>
+                <p>Automate and track emails to individuals or groups.</p><p> Contentionary's built-in system helps organize your organization.</p>
             </div>
         </section>
         <section class="what">
@@ -22,7 +29,7 @@
             <p>can store the course materials online; manage assignments, quizzes and exams;</p>
             <p>monitor due dates; grade results and provide students with feedback all in one place.</p>
             <div class="creator">
-                <div class="instruct"> </div>
+                <div class="instruct">   </div>
                 <div class="instruct"> </div>
             </div>
         </section>
@@ -41,6 +48,14 @@ export default {
 </script>
 
 <style scoped>
+* {
+    box-sizing: border-box;
+}
+.life {
+    width: 100%;
+    height: auto;
+    border: 4px solid red
+}
 div {
     border: 1px dashed red;
     width: 100%;
@@ -68,9 +83,13 @@ div p {
     margin-top: 100px;
 }
 
+.bill p {
+    line-height: normal;
+}
+
 .round {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     position: relative;
     bottom: 60px;

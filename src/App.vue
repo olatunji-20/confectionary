@@ -2,19 +2,28 @@
   <HelloWorld />
   <Landing />
   <Cloud />
+  <Classroom />
+  <Management />
+  <Footer />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Landing from './components/Lander.vue'
 import Cloud from './components/Cloud.vue'
+import Classroom from './components/Classroom.vue'
+import Management from './components/Management.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     Landing,
-    Cloud
+    Cloud,
+    Classroom,
+    Management,
+    Footer
   }
 }
 

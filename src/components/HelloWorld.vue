@@ -35,15 +35,15 @@ export default {
   height: 13vh;
   width: 100%;
   margin: 0px;
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 .logo {
   /* border: 1px solid red; */
   background-color: azure;
-  width: 300px;
-  height: 50px;
-  margin: 10px 40px;
+  width: 18.75rem;
+  height: 3.125rem;
+  margin: 0.625rem 2.5rem;
   display: relative;
   float: left;
 }
