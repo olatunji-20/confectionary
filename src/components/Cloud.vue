@@ -29,8 +29,20 @@
             <p>can store the course materials online; manage assignments, quizzes and exams;</p>
             <p>monitor due dates; grade results and provide students with feedback all in one place.</p>
             <div class="creator">
-                <div class="instruct">   </div>
-                <div class="instruct"> </div>
+                <div class="instruct">
+                    <img class="teach" src="../assets/teacher.png" />
+                    <div class="tutor">
+                        <h4>FOR INSTRUCTORS</h4>
+                        <p>Start a class today</p>
+                    </div>
+                </div>
+                <div class="instruct">
+                    <img class="teach" src="../assets/group.png" />
+                    <div class="tutor">
+                        <h4>FOR CREATORS</h4>
+                        <p>Start a session today</p>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -118,10 +130,28 @@ div p {
     justify-content: space-around;
 }
 .instruct {
-    background-color: bisque;
     width: 260px;
     height: 180px;
-    border-radius: 7px; 
+    border-radius: 7px;
+    padding: 0px;
+}
+.teach {
+    width: 100%;
+    height: 100%;
+}
+.tutor {
+    border: 1px solid green;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    bottom: 170px;
+}
+.what .creator .instruct p {
+    padding: 12px 5px;
+    width: 150px;
+    margin: 0px auto;
+    border: 1px solid red;
+    border-radius: 35px;
 }
 
 

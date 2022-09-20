@@ -7,13 +7,13 @@
                 <div class="join">Join for free</div>
             </div>
             <div class="second">
-
+                <img class="lolo" src="../assets/lovely.png" />
             </div>
         </div>
         <div class="services">
             <h4>Trusted by 5,000+ Companies Worldwide.</h4>
             <div class="comp">
-                <div class="company"><img class="pic" src="../assets/air.png" alt="air" /></div>
+                <div class="company"><img class="pic" src="../assets/airbnb.png" alt="air" /></div>
                 <div class="company"><img class="pic" src="../assets/amazon.png" alt="air" /></div>
                 <div class="company"><img class="pic" src="../assets/facebook.png" alt="air" /></div>
                 <div class="company"><img class="pic" src="../assets/google.png" alt="air" /></div>
@@ -70,21 +70,25 @@ export default {
 }
 .second {
     /* border: 1px solid blue; */
-    width: 500px;
+    width: 450px;
     height: 500px;
     /* background-color: azure; */
 }
-
+.lolo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .services {
     /* background-color: floralwhite; */
     width: 100%;
-    height: 180px;
+    height: auto;
     /* border: 1px solid crimson; */
     margin-bottom: 70px;
 }
 .comp {
     width: 900px;
-    height: 100px;
+    height: auto;
     /* border: 1px solid black; */
     /* background-color: powderblue; */
     margin: 25px auto 10px;
@@ -94,14 +98,15 @@ export default {
     padding: 10px;
 }
 .company {
-    width: 120px;
-    height: 80px;
+    width: 100px;
+    height: 50px;
     /* background-color: azure; */
     /* border: 1px solid red; */
 }
 .pic {
-    width: 120px;
-    height: 80px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 </style>
