@@ -12,9 +12,16 @@
     <div class="they">
 
         <div class="they1">
-            <div class="rrr"></div>
-            <div class="ttt"></div>
-            <div class="sss"></div>
+            <img class="rrre" src="../assets/private.png" />
+            <!-- <div class="rrr"></div>
+            <div class="ttt">
+                <div class="vvvv"></div>
+                <div class="uuuu">
+                    <div class="wwww"></div>
+                    <div class="wwww"></div>
+                </div>
+            </div>
+            <div class="sss"></div> -->
         </div>
 
 
@@ -22,6 +29,8 @@
 
         <div class="they2">
             <h2>One-on-one</h2>
+            <h2>Discussions</h2>
+            <p>Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
         </div>
     </div>
     <div class="last">
@@ -125,47 +134,91 @@
 
 
     .they1 {
-        width: 500px;
+        width: 650px;
         height: auto;
         border: 2px solid goldenrod;
         display: block;
         padding: 0px;
     }
-    .rrr {
+    .rrre {
+        width: 100%;
+        height: 100%;
+    }
+    /* .rrr {
         width: 100px;
         height: 100px;
         background-color: aqua;
         border: 10px solid red;
+        border-radius: 50%;
         position: relative;
         margin: 0px;
         float: right;
     }
-    .sss {
-        width: 100px;
-        height: 100px;
-        border: 10px solid green;
-        position: relative;
-        bottom: 140px;
-        z-index: 1;
-        margin: 0px;
-    }
+    
     .ttt {
-        width: 90%;
+        width: 92%;
         height: 50%;
         border: 4px solid firebrick;
+        display: inline-block;
+        border-radius: 9px;
         position: relative;
         bottom: 70px;
         z-index: 6;
         margin: 0px auto;
+        padding: 0px;
     }
+    .sss {
+        width: 120px;
+        height: 120px;
+        border: 20px solid green;
+        border-radius: 15px;
+        position: relative;
+        bottom: 180px;
+        left: 5px;
+        z-index: 1;
+        margin: 0px;
+    }
+    .uuuu {
+        width: 90%;
+        height: 100%;
+        border: 2px solidr red;
+        border-radius: 10px;
+        position: relative;
+        left: 70px;
+        bottom: 50px;
+        z-index: 5;
+    }
+    .vvvv {
+        width: 80px;
+        height: 80px;
+        border: 10px solid forestgreen;
+        border-radius: 50%;
+        margin: 0px;
+        position: relative;
+        top: 100px;
+        left: 20px;
+        z-index: 6;
+    }
+    .wwww {
+        width: 120px;
+        height: 50%;
+        border: 1px solid green;
+        margin: 0px;
+    } */
 
 
 
 
     .they2 {
-        width: 500px;
+        width: 400px;
         height: 450px;
-        /* border: 1px solid violet; */
+        border: 1px solid violet;
+        display: block;
+        padding: 100px 20px;
+        text-align: left;
+    }
+    .they2 h2 {
+        line-height: 10px;
     }
     .last {
         width: 100%;
