@@ -1,7 +1,10 @@
 <template>
   <div>
     <section class="navbar">
-      <div class="logo"></div>
+      <div class="logo">
+        <img class="lll" src="../assets/logo.png" />
+      </div>
+      <div class="menu"></div>
       <ul>
         <li>Home</li>
         <li>Careers</li>
@@ -39,13 +42,18 @@ export default {
 }
 
 .logo {
-  /* border: 1px solid red; */
-  background-color: azure;
+  border: 1px solid red;
+  /* background-color: pink; */
   width: 18.75rem;
-  height: 3.125rem;
+  height: 3.25rem;
   margin: 0.625rem 2.5rem;
   display: relative;
   float: left;
+}
+
+.lll {
+  width: 100%;
+  height: 100%;
 }
 
 ul {
@@ -76,7 +84,43 @@ ul li {
 }
 
 
+  @media screen and (max-width: 450px) {
+    .navbar {
+      border: 2px solid green;
+      width: 100%;
+    }
+    .logo {
+      margin: 1rem 5px;
+      float: right;
+    }
+    .menu {
+      width: 40px;
+      height: 40px;
+      background-color: gray;
+      float: left;
+      margin: 1.4rem 2px;
+    }
+    ul {
+      display: none;
+    }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }
 
 
 

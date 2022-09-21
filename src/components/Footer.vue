@@ -9,8 +9,7 @@
             <h4>United Kingdom Office: </h4>
             <p>Longside Lane, Longside House, Bradford, United Kingdom. UK: +234 806 584 0255</p>
             <h4>Contact Email: </h4>
-            <p>contact@contentionary.com</p>
-            
+            <p>contact@contentionary.com</p>          
         </div>
         <div class="deux">
             <h4>RESOURCES</h4>
@@ -113,9 +112,38 @@ section {
 }
 .copy {
     width: 100%;
-    height: 50px;
+    height: 70px;
     background-color: fuchsia;
     border: 2px dashed red;
+    padding: 10px;
     /* display: block; */
 }
+
+    @media screen and (max-width: 450px) {
+        .un {
+            width: 100%;
+            border: 8px solid goldenrod;
+        }
+        .deux {
+            width: 100%;
+            border: 8px solid red;
+            border-bottom: 4px solid green;
+        }
+        .trois {
+            width: 100%;
+            border: 8px solid yellow;
+        }
+
+
+
+
+
+
+
+
+
+    }
+
+
+
 </style>

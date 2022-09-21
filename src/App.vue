@@ -1,7 +1,7 @@
 <template>
   <HelloWorld />
   <Landing />
-  <Cloud />
+  <Cloud /> 
   <Classroom />
   <Management />
   <Footer />
@@ -41,6 +41,7 @@ export default {
   color: #2c3e50;
   margin: 0px;
 }
+
 
 
 </style>

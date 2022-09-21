@@ -1,76 +1,77 @@
 <template>
     <section>
-    <div>
-        <div class="mng">
-            <h2>Class Management Tools For Educators.</h2>
-            <p>Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.</p>
-        </div>
-        <div class="secmng">
-            <img class="man" src="../assets/manage.png" />
-        </div>
-    </div>
-    <div class="they">
-
-        <div class="they1">
-            <img class="rrre" src="../assets/private.png" />
-            <!-- <div class="rrr"></div>
-            <div class="ttt">
-                <div class="vvvv"></div>
-                <div class="uuuu">
-                    <div class="wwww"></div>
-                    <div class="wwww"></div>
-                </div>
+        <div>
+            <div class="mng">
+                <h2>Class Management Tools For Educators.</h2>
+                <p>Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.</p>
             </div>
-            <div class="sss"></div> -->
-        </div>
-
-
-
-
-        <div class="they2">
-            <h2>One-on-one</h2>
-            <h2>Discussions</h2>
-            <p>Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
-        </div>
-    </div>
-    <div class="last">
-        <h2>Latest News and Resources</h2>
-        <p>See the development that have occurred to Contentionary in the world</p>
-        <div class="lastt">
-            <div class="sed">
-                <div class="img"><img class="lap" src="../assets/laptop.png" /></div>
-                <p class="gogog">NEWS</p>
-                <h5>Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h5>
-                <p>Class, launched less than a year ago by Blackboard co-founder Micheal Chasen, integrates exclusively...</p>
-                <a href="#"><p>Read more</p></a>
+            <div class="secmng">
+                <img class="man" src="../assets/manage.png" />
             </div>
-            <div class="sedd">
-                <div class="news">
-                    <div class="pic"><img src="../assets/rect1.png" /></div>
-                    <div class="wrap">
-                        <h5>Class Technologies Inc. $30 Million Series A Financial to Meet High Demand</h5>
-                        <p>Class Technologies Inc., the company that created Class,...</p>
+        </div>
+        <div class="they">
+
+            <div class="they1">
+                <img class="rrre" src="../assets/private.png" />
+                <!-- <div class="rrr"></div>
+                <div class="ttt">
+                    <div class="vvvv"></div>
+                    <div class="uuuu">
+                        <div class="wwww"></div>
+                        <div class="wwww"></div>
                     </div>
                 </div>
-                <div class="news">
-                    <div class="pic"><img src="../assets/rect2.png" /></div>
-                    <div class="wrap">
-                        <h5>Zoom's earliest investors are betting millions on a better Zoom for schools</h5>
-                        <p>Zoom was never created to be a consumer product. Nonetheless, the...</p>
+                <div class="sss"></div> -->
+            </div>
+
+
+
+
+            <div class="they2">
+                <h2>One-on-one</h2>
+                <h2>Discussions</h2>
+                <p>Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
+            </div>
+        </div>
+
+        <div class="last">
+            <h2>Latest News and Resources</h2>
+            <p>See the development that have occurred to Contentionary in the world</p>
+            <div class="lastt">
+                <div class="sed">
+                    <div class="img"><img class="lap" src="../assets/laptop.png" /></div>
+                    <p class="gogog">NEWS</p>
+                    <h5>Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h5>
+                    <p>Class, launched less than a year ago by Blackboard co-founder Micheal Chasen, integrates exclusively...</p>
+                    <a href="#"><p>Read more</p></a>
+                </div>
+                <div class="sedd">
+                    <div class="news">
+                        <div class="pic"><img src="../assets/rect1.png" /></div>
+                        <div class="wrap">
+                            <h5>Class Technologies Inc. $30 Million Series A Financial to Meet High Demand</h5>
+                            <p>Class Technologies Inc., the company that created Class,...</p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="pic"><img src="../assets/rect2.png" /></div>
+                        <div class="wrap">
+                            <h5>Zoom's earliest investors are betting millions on a better Zoom for schools</h5>
+                            <p>Zoom was never created to be a consumer product. Nonetheless, the...</p>
+                        </div>
+                    </div>
+                    <div class="news">
+                        <div class="pic"><img src="../assets/rect3.png" /></div>
+                        <div class="wrap">
+                            <h5>Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms</h5>
+                            <p>This year, investors have reaped big financial returns from betting on zoom...</p>
+                        </div>
                     </div>
                 </div>
-                <div class="news">
-                    <div class="pic"><img src="../assets/rect3.png" /></div>
-                    <div class="wrap">
-                        <h5>Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms</h5>
-                        <p>This year, investors have reaped big financial returns from betting on zoom...</p>
-                    </div>
-                </div>
+
             </div>
 
         </div>
-
-    </div>
     </section>
 </template>
 
@@ -94,7 +95,7 @@
     div {
         width: 100%;
         height: auto;
-        border: 2px solid sienna;
+        border: 4px dashed sienna;
         background-color: #FFFFFF;
         margin: 50px 0px;
         display: flex;
@@ -223,14 +224,14 @@
     .last {
         width: 100%;
         height: auto;
-        /* border: 2px solid hotpink; */
+        border: 4px solid hotpink;
         background-color: azure;
         display: block;
     }
     .lastt{
         width: 95%;
         height: auto;
-        /* border: 3px solid green; */
+        border: 5px solid green;
         margin: 50px auto;
         background-color: aquamarine;
         display: flex;
@@ -240,7 +241,7 @@
     .sed {
         width: 400px;
         height: 500px;
-        border: 2px solid khaki;
+        border: 2px solid black;
         background-color: thistle;
         padding: 0px;
         display: block;
@@ -265,7 +266,7 @@
     .sedd {
         width: 500px;
         height: 500px;
-        /* border: 2px solid red; */
+        border: 8px solid red;
         background-color: seashell;
         display: block;
     }
@@ -295,6 +296,59 @@
         padding: 0px;
         display: block;
         margin: 0px;
+    }
+
+
+    @media screen and (max-width: 450px) {
+        div {
+            flex-direction: column;
+        }
+        .mng {
+            width: 100%;
+            margin-top: 40px;
+        }
+        .secmng {
+            width: 100%;
+        }
+        .they1 {
+            display: none;
+        }
+        .they2 {
+            width: 100%;
+        }
+
+        .lastt {
+            width: 100%;
+            flex-direction: column;
+        }
+        .sed {
+            width: 100%;
+        }
+        .sedd {
+            width: 100%;
+            height: auto;
+        }
+        .news {
+            width: 100%;
+            height: auto;
+            flex-direction: column;
+            justify-content: space-around;
+            margin: 25px auto;
+        }
+        .pic {
+            margin: 0px auto;
+        }
+
+
+        .wrap {
+            width: 100%;
+        }
+
+
+
+
+
+
     }
 
 </style>

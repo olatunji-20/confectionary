@@ -28,13 +28,13 @@
                     <div class="int">
                         <div class="icon"></div>
                         <div class="iconn">
-                            <p>gdh</p>
+                            <p>TA's and presenters can be moved to the front of the class.</p>
                         </div>
                     </div>
                     <div class="int">
                         <div class="icon"></div>
                         <div class="iconn">
-                            <p>udfus</p>
+                            <p>Teachers can easily see all students and class data at one time.</p>
                         </div>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ export default {
     box-sizing: border-box;
 }
 div {
-    border: 2px solid green;
+    border: 5px solid green;
     width: 100%;
     height: auto;
     background-color: cornsilk;
@@ -83,12 +83,12 @@ div {
 .first {
     width: 80%;
     height: auto;
-    border: 1px solid blue;
+    border: 4px solid blue;
     background-color: aliceblue;
     margin: 50px auto 80px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .cont {
     width: 400px;
@@ -140,19 +140,19 @@ div {
 }
 .inter .int {
     width: 100%;
-    height: 85px;
+    height: 95px;
     border: 1px solid red;
     margin: 5px auto;
     padding: 0px;
     display: inline-block;
 }
 .inter .int .icon {
-    width: 20%;
+    width: 23%;
     height: 100%;
     background-color: salmon;
     border: 2px solid lawngreen;
     margin: 0px;
-    padding: 30px;
+    padding: 30px;  
     display: inline;
 }
 .inter .int .iconn {
@@ -161,7 +161,7 @@ div {
     background-color: deeppink;
     border: 2px solid firebrick;
     display: inline-block;
-    padding: 0px;
+    padding: 0px 5px;
     margin: 0px;
 }
 .tools {
@@ -200,4 +200,43 @@ div {
     height: 100%;
     object-fit: contain;
 }
+
+@media screen and (max-width: 450px) {
+    .first {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        border: 7px solid blue;
+    }
+    .cont {
+        width: 100%;
+        height: 250px;
+        margin-top: 10px;
+    }
+    .teachers {
+        padding: 0px;
+    }
+    .call {
+        display: none;
+    }
+    .user {
+        width: 100%;
+        border: 5px solid hotpink;
+        padding: 0px;
+    }
+    .tools {
+        width: 95%; 
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
 </style>

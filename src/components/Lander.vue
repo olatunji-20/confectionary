@@ -1,6 +1,7 @@
 <template>
     <div>
         <div id="land">
+            <div class="menubar"></div>
             <div class="first">
                 <h1><span style="color:tomato">Create</span> <span style="color:darkblue">your Online Academy in minutes</span></h1>
                 <p>Share, sell, engage, support and impact your audience/ students using several Apps in Contentionary</p>
@@ -12,13 +13,15 @@
         </div>
         <div class="services">
             <h4>Trusted by 5,000+ Companies Worldwide.</h4>
-            <div class="comp">
-                <div class="company"><img class="pic" src="../assets/airbnb.png" alt="air" /></div>
-                <div class="company"><img class="pic" src="../assets/amazon.png" alt="air" /></div>
-                <div class="company"><img class="pic" src="../assets/facebook.png" alt="air" /></div>
-                <div class="company"><img class="pic" src="../assets/google.png" alt="air" /></div>
-                <div class="company"><img class="pic" src="../assets/grab.png" alt="air" /></div>
-                <div class="company"><img class="pic" src="../assets/netflix.png" alt="air" /></div>
+            <div class="scroller">
+                <div class="comp">
+                    <div class="company"><img class="pic" src="../assets/airbnb.png" alt="air" /></div>
+                    <div class="company"><img class="pic" src="../assets/amazon.png" alt="air" /></div>
+                    <div class="company"><img class="pic" src="../assets/facebook.png" alt="air" /></div>
+                    <div class="company"><img class="pic" src="../assets/google.png" alt="air" /></div>
+                    <div class="company"><img class="pic" src="../assets/grab.png" alt="air" /></div>
+                    <div class="company"><img class="pic" src="../assets/netflix.png" alt="air" /></div>
+                </div>
             </div>
         </div>
     </div>
@@ -83,13 +86,13 @@ export default {
     /* background-color: floralwhite; */
     width: 100%;
     height: auto;
-    /* border: 1px solid crimson; */
+    border: 1px solid crimson;
     margin-bottom: 70px;
 }
 .comp {
     width: 900px;
     height: auto;
-    /* border: 1px solid black; */
+    border: 2px solid black;
     /* background-color: powderblue; */
     margin: 25px auto 10px;
     display: flex;
@@ -101,12 +104,46 @@ export default {
     width: 100px;
     height: 50px;
     /* background-color: azure; */
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .pic {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+@media screen and (max-width: 450px) {
+    .menubar {
+      border: 4px solid red;
+      width: 300px;
+      height: 400px;
+      background-color: floralwhite;
+      position: absolute;
+      opacity: 0.7;
+      top: 14vh;
+      left: 5px;
+    }
+    #land {
+        height: 70vh;
+    }
+    .second {
+        display: none;
+    }
+    .services {
+        width: 100%;
+    }
+    .scroller {
+        border: 3px solid hotpink;
+        overflow: auto;
+    }
+    .comp {
+        width: 900px;
+        overflow: auto;
+    }
+
+
+
+
 }
 
 </style>
