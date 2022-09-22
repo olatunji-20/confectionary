@@ -3,7 +3,8 @@
         <div class="first">
             <div class="cont">
                 <h4>Everything you can do in a physical classroom, you can do with Confectionary.</h4>
-                <p>Contentionary's school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
+                <p>Contentionary's school management software helps traditional and online schools manage scheduling,
+                    attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
                 <p><a href="">Learn more</a></p>
             </div>
             <div class="cont" style="padding:0px">
@@ -43,13 +44,15 @@
         <div class="tools">
             <div class="one">
                 <h2>Tools For Teachers And Learners</h2>
-                <p>Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can handout assignments in real-time for students to complete and submit.</p>
+                <p>Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can
+                    handout assignments in real-time for students to complete and submit.</p>
             </div>
             <div class="two"><img class="thinkk" src="../assets/think.png" /></div>
             <div class="one" style="padding: 0px"><img class="ita" src="../assets/italy.png" /></div>
             <div class="two">
                 <h2>Assessments, Quizzes, Tests</h2>
-                <p>Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the online gradebook.</p>
+                <p>Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the
+                    online gradebook.</p>
             </div>
         </div>
         <!-- <h3>Lorem ipsum dolor sits quos, muam fugit numquam nostrum eos commodi sit placeat reprehenderit consequuntur quia nisi odit!</h3> -->
@@ -71,6 +74,7 @@ export default {
 * {
     box-sizing: border-box;
 }
+
 div {
     border: 5px solid green;
     width: 100%;
@@ -90,6 +94,7 @@ div {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
 .cont {
     width: 400px;
     height: 250px;
@@ -105,6 +110,7 @@ div {
     height: 100%;
     z-index: 9;
 }
+
 .teachers {
     border: 1px solid blue;
     width: 100%;
@@ -115,16 +121,19 @@ div {
     flex-direction: row;
     justify-content: space-around;
 }
+
 .call {
     width: 600px;
     height: 420px;
     padding: 0px;
     border: 3px solid red;
 }
+
 .call .pres {
     width: 100%;
     height: 100%;
 }
+
 .user {
     width: 500px;
     height: 420px;
@@ -132,12 +141,14 @@ div {
     background-color: red;
     text-align: left;
 }
+
 .inter {
     width: 100%;
     height: auto;
     border: 2px solid green;
     padding: 5px;
 }
+
 .inter .int {
     width: 100%;
     height: 95px;
@@ -146,15 +157,17 @@ div {
     padding: 0px;
     display: inline-block;
 }
+
 .inter .int .icon {
     width: 23%;
     height: 100%;
     background-color: salmon;
     border: 2px solid lawngreen;
     margin: 0px;
-    padding: 30px;  
+    padding: 30px;
     display: inline;
 }
+
 .inter .int .iconn {
     width: 77%;
     height: 100%;
@@ -164,6 +177,7 @@ div {
     padding: 0px 5px;
     margin: 0px;
 }
+
 .tools {
     width: 80%;
     height: auto;
@@ -175,6 +189,7 @@ div {
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
 .one {
     background-color: aqua;
     border: 2px solid darkgoldenrod;
@@ -183,10 +198,12 @@ div {
     text-align: left;
     margin-top: 50px;
 }
+
 .one .ita {
     width: 100%;
     height: 100%;
 }
+
 .two {
     background-color: aqua;
     border: 3px solid darkgoldenrod;
@@ -195,6 +212,7 @@ div {
     height: 380px;
     text-align: left;
 }
+
 .thinkk {
     width: 100%;
     height: 100%;
@@ -208,35 +226,31 @@ div {
         flex-direction: column;
         border: 7px solid blue;
     }
+
     .cont {
         width: 100%;
         height: 250px;
         margin-top: 10px;
     }
+
     .teachers {
         padding: 0px;
     }
+
     .call {
         display: none;
     }
+
     .user {
         width: 100%;
         border: 5px solid hotpink;
         padding: 0px;
     }
+
     .tools {
-        width: 95%; 
+        width: 95%;
     }
 
 
-
-
-
-
-
-
 }
-
-
-
 </style>

@@ -77,6 +77,7 @@ ul li {
 .sec {
   margin: 0px 0px 0px 30px;
 }
+
 .sec li {
   margin: 0px 20px;
   font-size: 14px;
@@ -84,46 +85,28 @@ ul li {
 }
 
 
-  @media screen and (max-width: 450px) {
-    .navbar {
-      border: 2px solid green;
-      width: 100%;
-    }
-    .logo {
-      margin: 1rem 5px;
-      float: right;
-    }
-    .menu {
-      width: 40px;
-      height: 40px;
-      background-color: gray;
-      float: left;
-      margin: 1.4rem 2px;
-    }
-    ul {
-      display: none;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 450px) {
+  .navbar {
+    border: 2px solid green;
+    width: 100%;
   }
 
+  .logo {
+    margin: 1rem 5px;
+    float: right;
+  }
 
+  .menu {
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    float: left;
+    margin: 1.4rem 2px;
+  }
 
+  ul {
+    display: none;
+  }
 
-
+}
 </style>

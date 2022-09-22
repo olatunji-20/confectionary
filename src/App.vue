@@ -1,15 +1,13 @@
 <template>
-  <HelloWorld />
-  <Landing />
-  <Cloud /> 
+  <Header />
+  <Cloud />
   <Classroom />
   <Management />
   <Footer />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Landing from './components/Lander.vue'
+import Header from './components/Header.vue'
 import Cloud from './components/Cloud.vue'
 import Classroom from './components/Classroom.vue'
 import Management from './components/Management.vue'
@@ -18,8 +16,7 @@ import Footer from './components/Footer.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    Landing,
+    Header,
     Cloud,
     Classroom,
     Management,
@@ -33,6 +30,7 @@ export default {
 * {
   box-sizing: border-box;
 }
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -41,7 +39,4 @@ export default {
   color: #2c3e50;
   margin: 0px;
 }
-
-
-
 </style>

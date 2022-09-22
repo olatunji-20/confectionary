@@ -1,7 +1,36 @@
 <template>
     <div>
+        <section class="navbar">
+            <div class="logo">
+                <img class="lll" src="../assets/logo.png" />
+            </div>
+            <div class="menu" v-on:click="toggleMenu"></div>
+            <ul class="navul">
+                <li>Home</li>
+                <li>Careers</li>
+                <li>Blog</li>
+                <li>About Us</li>
+                <li>Marketplace</li>
+            </ul>
+            <ul class="sec">
+                <li style="background-color: floralwhite;">Login</li>
+                <li style="background-color: tomato; color: floralwhite;">Create Account</li>
+            </ul>
+        </section>
+
         <div id="land">
-            <div class="menubar"></div>
+            <div class="menubar" v-show="showMenu">
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos asperiores at aut consectetur nihil error incidunt nostrum voluptatibus quos possimus? Alias consequatur sit iure quos quod commodi quisquam cumque debitis?</p> -->
+                <ul>
+                    <li>HOME</li>
+                    <li>CAREERS</li>
+                    <li>BLOG</li>
+                    <li>ABOUT US</li>
+                    <li>MARKETPLACE</li>
+                    <li>LOGIN</li>
+                    <li>CREATE ACCOUNT</li>
+                </ul>
+            </div>
             <div class="first">
                 <h1><span style="color:tomato">Create</span> <span style="color:darkblue">your Online Academy in
                         minutes</span></h1>
@@ -28,19 +57,83 @@
         </div>
     </div>
 </template>
-
+  
 <script>
 export default {
-    name: 'Landing',
+    name: 'Header',
     data() {
         return {
+            showMenu: false
+        }
+    },
+    methods: {
+            toggleMenu() {
+                this.showMenu = !this.showMenu
+            }
+
 
         }
-    }
+
+
 }
 </script>
-
+  
+  <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.navbar {
+    background-color: blanchedalmond;
+    height: 13vh;
+    width: 100%;
+    margin: 0px;
+    padding-top: 0.625rem;
+    z-index: 8;
+}
+
+.logo {
+    border: 1px solid red;
+    /* background-color: pink; */
+    width: 18.75rem;
+    height: 3.25rem;
+    margin: 0.625rem 2.5rem;
+    display: relative;
+    float: left;
+}
+
+.lll {
+    width: 100%;
+    height: 100%;
+}
+
+.navul {
+    /* border: 1px solid blue; */
+    width: auto;
+    display: inline-block;
+    padding: 2px;
+    margin-top: 23px;
+}
+
+ul li {
+    width: auto;
+    height: auto;
+    /* border: 1px solid green; */
+    padding: 5px 20px;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.sec {
+    margin: 0px 0px 0px 30px;
+    display: inline-block;
+}
+
+.sec li {
+    margin: 0px 15px;
+    font-size: 14px;
+    border-radius: 30px;
+}
+
+
 #land {
     width: 100%;
     height: 85vh;
@@ -122,16 +215,68 @@ export default {
     object-fit: contain;
 }
 
+
+
 @media screen and (max-width: 450px) {
+    .navbar {
+        border: 2px solid green;
+        width: 100%;
+    }
+
+    .logo {
+        margin: 1rem 5px;
+        float: right;
+    }
+
+    .menu {
+        width: 40px;
+        height: 40px;
+        background-color: gray;
+        float: left;
+        margin: 1.4rem 2px;
+        z-index: 1;
+    }
+
+    .navul {
+        display: none;
+    }
+    .sec {
+        display: none;
+    }
     .menubar {
-        border: 4px solid red;
+        /* border: 4px solid red; */
+        opacity: 0.8;
         width: 300px;
-        height: 400px;
+        height: auto;
         background-color: floralwhite;
         position: absolute;
-        opacity: 0.7;
+        z-index: 1;
         top: 14vh;
         left: 5px;
+        overflow: hidden;
+        animation-name: drop;
+        animation-timing-function: ease-in;
+        animation-duration: .8s;
+    }
+
+    @keyframes drop{
+        0% {
+            height: 0px;
+        }
+
+        100% {
+            height: 320px;
+        }
+    }
+    
+
+    .menubar ul li {
+        width: 100%;
+        list-style-type: none;
+        text-align: left;
+        padding: 10px 0px;
+        font-weight: bolder;
+        font-size: 16px;
     }
 
     #land {
@@ -157,7 +302,6 @@ export default {
     }
 
 
-
-
 }
 </style>
+  
