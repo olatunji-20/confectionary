@@ -2,7 +2,8 @@
     <div>
         <div class="first">
             <div class="cont1">
-                <h4 style="color: #2F327D">Everything you can do in a physical classroom, <span style="color:#F77E23">you can do with Confectionary.</span></h4>
+                <h4 style="color: #2F327D">Everything you can do in a physical classroom, <span
+                        style="color:#F77E23">you can do with Confectionary.</span></h4>
                 <p>Contentionary's school management software helps traditional and online schools manage scheduling,
                     attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
                 <p><a href="">Learn more</a></p>
@@ -18,7 +19,8 @@
                 <img class="pres" src="../assets/present.png" />
             </div>
             <div class="user">
-                <h3 style="color:#2F327D">A <span style="color:#F77E23">user interface</span> designed for the classroom.</h3>
+                <h3 style="color:#2F327D">A <span style="color:#F77E23">user interface</span> designed for the
+                    classroom.</h3>
                 <div class="inter">
                     <div class="int">
                         <div class="icon"><img src="../assets/vectorf.png" /></div>
@@ -49,13 +51,12 @@
             </div>
             <div class="two"><img class="thinkk" src="../assets/think.png" /></div>
             <div class="one" style="padding: 0px"><img class="ita" src="../assets/italy.png" /></div>
-            <div class="two">
+            <div class="two" style="margin-top: 2rem">
                 <h2 style="color:#2F327D">Assessments, <span style="color:#F77E23">Quizzes</span>, Tests</h2>
                 <p>Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the
                     online gradebook.</p>
             </div>
         </div>
-        <!-- <h3>Lorem ipsum dolor sits quos, muam fugit numquam nostrum eos commodi sit placeat reprehenderit consequuntur quia nisi odit!</h3> -->
     </div>
 </template>
 
@@ -76,73 +77,64 @@ export default {
 }
 
 div {
-    border: 5px solid green;
     width: 100%;
     height: auto;
-    background-color: cornsilk;
-    padding: 20px;
+    padding: 1.25rem;
     display: block;
 }
 
 .first {
     width: 80%;
     height: auto;
-    border: 4px solid blue;
-    background-color: aliceblue;
-    margin: 50px auto 80px;
+    margin: 3.125rem auto 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 .cont {
-    width: 400px;
-    height: 250px;
-    border: 2px solid forestgreen;
-    background-color: azure;
+    width: 25rem;
+    height: 15.625rem;
     text-align: left;
-    padding: 20px;
+    padding: 1.25rem;
 }
+
 .cont1 {
-    width: 400px;
-    height: 250px;
-    border: 2px solid forestgreen;
-    background-color: azure;
+    width: 25rem;
+    height: 15.65rem;
     text-align: left;
-    padding: 20px;
+    padding: 1.25rem;
 }
+
 .cont:hover {
-    margin-left: 20px;
+    margin-left: 1.25rem;
     transition: .4s;
 }
+
 .cont1:hover {
-    margin-right: 20px;
+    margin-right: 1.25rem;
     transition: .4s;
 }
 
 .conn {
-    border: 1px solid red;
     width: 100%;
     height: 100%;
     z-index: 9;
 }
 
 .teachers {
-    border: 1px solid blue;
     width: 100%;
     height: auto;
-    background-color: aliceblue;
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .call {
-    width: 600px;
-    height: 420px;
-    padding: 0px;
-    border: 3px solid red;
+    width: 37.5rem;
+    height: 26.25rem;
+    padding: 0rem;
 }
 
 .call .pres {
@@ -151,69 +143,64 @@ div {
 }
 
 .user {
-    width: 500px;
-    height: 420px;
-    border: 3px solid blue;
-    background-color: red;
+    width: 31.25rem;
+    height: 26.25rem;
     text-align: left;
 }
 
 .inter {
     width: 100%;
     height: auto;
-    border: 2px solid green;
-    padding: 5px;
+    padding: 0.3125rem;
 }
 
 .inter .int {
     width: 100%;
-    height: 95px;
-    border: 1px solid red;
-    margin: 5px auto;
-    padding: 5px;
+    height: 5.9375rem;
+    margin: 0.3125rem auto;
+    padding: 0.3125rem;
     display: inline-block;
 }
 
 .inter .int .icon {
-    width: 80px;
-    height: 80px;
-    background-color: salmon;
-    border: 2px solid lawngreen;
+    width: 5rem;
+    height: 5rem;
     border-radius: 50%;
-    margin: 0px;
-    padding: 20px;
+    margin: 0rem;
+    padding: 1.25rem;
     display: inline;
 }
 
 .inter .int .iconn {
     width: 77%;
     height: 100%;
-    background-color: deeppink;
-    border: 2px solid firebrick;
     display: inline-block;
-    padding: 0px 5px;
-    margin: 0px;
+    padding: 0rem 0.3125rem;
+    margin: 0rem;
 }
 
 .tools {
     width: 80%;
     height: auto;
-    margin: 20px auto;
-    border: 2px solid darkmagenta;
-    background-color: floralwhite;
+    margin: 1rem auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
+    padding: 10px auto;
 }
 
 .one {
-    background-color: aqua;
-    border: 2px solid darkgoldenrod;
-    width: 350px;
-    height: 320px;
+    width: 21.875rem;
+    height: 20rem;
     text-align: left;
-    margin-top: 50px;
+    margin-top: 3.125rem;
+    position: relative;
+}
+
+.one:hover {
+    margin-top: 4rem;
+    transition: .4s;
 }
 
 .one .ita {
@@ -222,12 +209,16 @@ div {
 }
 
 .two {
-    background-color: aqua;
-    border: 3px solid darkgoldenrod;
-    margin-top: 10px;
-    width: 370px;
-    height: 380px;
+    margin-top: 0.625rem;
+    width: 23.125rem;
+    height: 23.75rem;
     text-align: left;
+    position: relative;
+}
+
+.two:hover {
+    margin-left: 2rem;
+    transition: .4s;
 }
 
 .thinkk {
@@ -236,12 +227,15 @@ div {
     object-fit: contain;
 }
 
+
+
+
+
 @media screen and (max-width: 450px) {
     .first {
         width: 100%;
         height: auto;
         flex-direction: column;
-        border: 7px solid blue;
     }
 
     .cont {
@@ -249,6 +243,7 @@ div {
         height: auto;
         margin-top: 10px;
     }
+
     .cont1 {
         width: 100%;
         height: auto;
@@ -265,9 +260,9 @@ div {
 
     .user {
         width: 100%;
-        border: 5px solid hotpink;
         padding: 0px;
     }
+
     .inter .int .icon {
         width: 20%;
         height: 100%;
@@ -276,6 +271,7 @@ div {
 
     .tools {
         width: 95%;
+        margin: 0px auto;
     }
 
 

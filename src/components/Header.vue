@@ -4,7 +4,9 @@
             <div class="logo">
                 <img class="lll" src="../assets/logo.png" />
             </div>
-            <div class="menu" v-on:click="toggleMenu"><img src="../assets/menu.png" /></div>
+            <div class="menu" v-on:click="toggleMenu">
+                <p v-text="showMenu ? '⨉' : 'Ξ' "></p>
+            </div>
             <ul class="navul">
                 <li>Home</li>
                 <li>Careers</li>
@@ -20,7 +22,6 @@
 
         <div v-on:click="showMenu = false" id="land">
             <div class="menubar" v-show="showMenu">
-                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos asperiores at aut consectetur nihil error incidunt nostrum voluptatibus quos possimus? Alias consequatur sit iure quos quod commodi quisquam cumque debitis?</p> -->
                 <ul>
                     <li>HOME</li>
                     <li>CAREERS</li>
@@ -36,7 +37,7 @@
                         minutes</span></h1>
                 <p>Share, sell, engage, support and impact your audience/ students using several Apps in Contentionary
                 </p>
-                <div class="join">Join for free</div>
+                <div class="join">Join for free<i class="fi fi-nav-icon-a"></i></div>
             </div>
             <div class="second">
                 <img class="lolo" src="../assets/lovely.png" />
@@ -68,18 +69,18 @@ export default {
         }
     },
     methods: {
-            toggleMenu() {
-                this.showMenu = !this.showMenu
-            }
-
-
+        toggleMenu() {
+            this.showMenu = !this.showMenu
         }
+
+
+    }
 
 
 }
 </script>
   
-  <!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped>
 .navbar {
     background-color: blanchedalmond;
@@ -91,8 +92,6 @@ export default {
 }
 
 .logo {
-    /* border: 1px solid red; */
-    /* background-color: pink; */
     width: 18.75rem;
     height: 3.25rem;
     margin: 0.625rem 2.5rem;
@@ -106,95 +105,101 @@ export default {
 }
 
 .navul {
-    /* border: 1px solid blue; */
     width: auto;
     display: inline-block;
-    padding: 2px;
-    margin-top: 23px;
+    padding: 0.125rem;
+    margin-top: 1.44rem;
 }
-.navul  li:hover {
+
+.navul li:hover {
     text-decoration: underline;
     cursor: pointer;
 }
+
 ul li {
     width: auto;
     height: auto;
-    /* border: 1px solid green; */
-    padding: 5px 20px;
+    padding: 0.32rem 1.25rem;
     list-style-type: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 0.88rem;
 }
 
 .sec {
-    margin: 0px 0px 0px 30px;
+    margin: 0rem 0rem 0rem 1.88rem;
     display: inline-block;
 }
 
 .sec li {
-    margin: 0px 15px;
-    font-size: 14px;
-    border-radius: 30px;
+    margin: 0rem 0.94rem;
+    font-size: 0.88rem;
+    border-radius: 1.88rem;
 }
+
 .sec1 {
     background-color: floralwhite;
 }
+
 .sec1:hover {
     background-color: tomato;
     color: floralwhite;
     transition: 0.4s;
     cursor: pointer;
 }
+
 .sec2 {
     background-color: tomato;
     color: floralwhite;
 }
+
 .sec2:hover {
     background-color: floralwhite;
     color: tomato;
     transition: 0.4s;
     cursor: pointer;
 }
+
 #land {
     width: 100%;
     height: 85vh;
     background-color: blanchedalmond;
     margin: 0px;
-    padding: 70px 20px 0px;
-    border-bottom-left-radius: 500px 90px;
-    border-bottom-right-radius: 500px 90px;
+    padding: 4.38rem 1.25rem 0rem;
+    border-bottom-left-radius: 31.25rem 5.625rem;
+    border-bottom-right-radius: 31.25rem 5.625rem;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
 }
 
 .first {
-    /* border: 1px solid green; */
-    margin-top: 40px;
-    width: 400px;
-    height: 300px;
-    padding: 10px 20px;
+    margin-top: 2.5rem;
+    width: 25rem;
+    height: 18.75rem;
+    padding: 0.625rem 1.25rem;
     background-color: blanchedalmond;
     text-align: left;
 }
+
 .first:hover {
-    margin-top: 20px;
+    margin-top: 1.25rem;
     transition: .4s;
 }
 
 .join {
-    width: 150px;
+    width: 9.375rem;
     height: auto;
-    border: 0px solid red;
+    border: 0rem solid red;
     background-color: #F77E23;
     color: floralwhite;
-    border-radius: 30px;
-    margin-top: 30px;
+    border-radius: 1.875rem;
+    margin-top: 1.875rem;
     text-align: center;
-    padding: 10px;
+    padding: 0.625rem;
 }
+
 .join:hover {
     background-color: white;
     color: #F77E23;
@@ -203,10 +208,8 @@ ul li {
 }
 
 .second {
-    /* border: 1px solid blue; */
-    width: 450px;
-    height: 500px;
-    /* background-color: azure; */
+    width: 28.125rem;
+    height: 31.25rem;
 }
 
 .lolo {
@@ -216,30 +219,24 @@ ul li {
 }
 
 .services {
-    /* background-color: floralwhite; */
     width: 100%;
     height: auto;
-    border: 1px solid crimson;
-    margin-bottom: 70px;
+    margin-bottom: 4.375rem;
 }
 
 .comp {
-    width: 900px;
+    width: 56.25rem;
     height: auto;
-    border: 2px solid black;
-    /* background-color: powderblue; */
-    margin: 25px auto 10px;
+    margin: 1.563rem auto 0.625rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .company {
-    width: 100px;
-    height: 50px;
-    /* background-color: azure; */
-    border: 1px solid red;
+    width: 6.25rem;
+    height: 3.125rem;
 }
 
 .pic {
@@ -247,14 +244,13 @@ ul li {
     height: 100%;
     object-fit: contain;
 }
+
 .menu {
     display: none;
 }
 
-
 @media screen and (max-width: 450px) {
     .navbar {
-        border: 2px solid green;
         width: 100%;
     }
 
@@ -268,20 +264,28 @@ ul li {
         width: 50px;
         height: 50px;
         color: white;
-        background-color: gray;
         float: left;
         margin: 1.4rem 2.5px;
         z-index: 1;
     }
 
+    .menu p {
+        padding: 0px;
+        font-weight: bolder;
+        font-size: 28px;
+        line-height: 0px;
+        color: #F77E23;
+    }
+
     .navul {
         display: none;
     }
+
     .sec {
         display: none;
     }
+
     .menubar {
-        /* border: 4px solid red; */
         opacity: 0.9;
         width: 250px;
         height: auto;
@@ -298,7 +302,7 @@ ul li {
         animation-duration: .5s;
     }
 
-    @keyframes drop{
+    @keyframes drop {
         0% {
             height: 0px;
         }
@@ -307,7 +311,6 @@ ul li {
             height: 320px;
         }
     }
-    
 
     .menubar ul li {
         width: 100%;
@@ -331,16 +334,18 @@ ul li {
     }
 
     .scroller {
-        border: 3px solid hotpink;
         overflow: auto;
     }
+
     ::-webkit-scrollbar {
         height: 5px;
         padding: 5px;
     }
+
     ::-webkit-scrollbar-track {
-        background-color: #65DAFF;
+        background-color: blanchedalmond;
     }
+
     ::-webkit-scrollbar-thumb {
         border-radius: 10px;
         background-color: #F77E23;
@@ -350,6 +355,9 @@ ul li {
         width: 900px;
         overflow: auto;
     }
+
+
+
 
 
 }

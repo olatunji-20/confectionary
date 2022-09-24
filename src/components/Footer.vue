@@ -54,8 +54,7 @@ section {
     height: auto;
     background-color: #2F327D;
     color: white;
-    border: 2px solid red;
-    padding: 5px;
+    padding: 0.3125rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -63,95 +62,93 @@ section {
 }
 
 .un {
-    width: 400px;
-    height: 350px;
-    /* border: 1px solid darkgray; */
-    /* background-color: burlywood; */
-    /* display: inline-block; */
+    width: 25rem;
+    height: 21.875rem;
     text-align: left;
-    padding: 50px 20px;
+    padding: 3.125rem 1.25rem;
     font-size: 12px;
 }
 
 .un h4 {
-    line-height: 0px;
+    line-height: 0rem;
 }
 
 .logg {
-    width: 300px;
-    height: 60px;
-    /* border: 1px solid black; */
-    margin-bottom: 50px;
+    width: 18.75rem;
+    height: 3.75rem;
+    margin-bottom: 3.125rem;
 }
 
 .deux {
-    width: 300px;
-    height: 350px;
+    width: 18.75rem;
+    height: 21.875rem;
     font-size: 12px;
-    /* border: 1px solid red; */
-    /* background-color: greenyellow; */
-    /* display: inline-block; */
-    padding: 70px 10px;
+    padding: 4.375rem 0.625rem;
     text-align: left;
 }
 
 .deux ul li {
-    line-height: 30px;
+    line-height: 1.875rem;
     list-style-type: none;
+    position: relative;
 }
 
+.deux ul li:hover {
+    left: 0.75rem;
+}
+
+
 .deux h4 {
-    padding-left: 40px;
+    padding-left: 2.5rem;
 }
 
 .trois {
-    width: 350px;
-    height: 350px;
+    width: 21.875rem;
+    height: 21.875rem;
     font-size: 12px;
-    /* border: 1px solid blue; */
-    /* background-color: cornsilk; */
-    /* display: inline-block; */
-    padding: 70px 10px;
+    padding: 4.375rem 0.625rem;
     text-align: left;
 }
 
 .trois ul li {
-    line-height: 30px;
+    line-height: 1.875rem;
     list-style-type: none;
+    position: relative;
+}
+
+.trois ul li:hover {
+    left: 0.75rem;
 }
 
 .trois h4 {
-    padding-left: 40px;
+    padding-left: 2.5rem;
 }
 
 .copy {
     width: 100%;
-    height: 70px;
+    height: 4.375rem;
     background-color: #2F327D;
-    border-top: 2px solid white;
-    padding: 10px;
-    /* display: block; */
+    border-top: 1px solid white;
+    padding: 0.625rem;
 }
+
 
 @media screen and (max-width: 450px) {
     .un {
         width: 100%;
         padding-bottom: 30px;
-        /* border: 8px solid goldenrod; */
     }
 
     .deux {
         width: 100%;
         height: auto;
         padding-bottom: 30px;
-        /* border: 8px solid red; */
     }
 
     .trois {
         width: 100%;
         height: auto;
         padding-bottom: 30px;
-        /* border: 8px solid yellow; */
         border-bottom: 2px solid white;
     }
 

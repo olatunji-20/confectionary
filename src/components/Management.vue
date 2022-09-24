@@ -13,15 +13,6 @@
         <div class="they">
             <div class="they1">
                 <img class="rrre" src="../assets/private.png" />
-                <!-- <div class="rrr"></div>
-                <div class="ttt">
-                    <div class="vvvv"></div>
-                    <div class="uuuu">
-                        <div class="wwww"></div>
-                        <div class="wwww"></div>
-                    </div>
-                </div>
-                <div class="sss"></div> -->
             </div>
             <div class="they2">
                 <h2 style="color:#2f327d">One-on-one</h2>
@@ -37,7 +28,8 @@
                 <div class="sed">
                     <div class="img"><img class="lap" src="../assets/laptop.png" /></div>
                     <p class="gogog">NEWS</p>
-                    <h5 style="color:#000000">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h5>
+                    <h5 style="color:#000000">Class adds $30 million to its balance sheet for a Zoom-friendly edtech
+                        solution</h5>
                     <p>Class, launched less than a year ago by Blackboard co-founder Micheal Chasen, integrates
                         exclusively...</p>
                     <a href="#">
@@ -48,21 +40,24 @@
                     <div class="news">
                         <div class="pic"><img src="../assets/rect1.png" /></div>
                         <div class="wrap">
-                            <h5  style="color:#000000">Class Technologies Inc. $30 Million Series A Financial to Meet High Demand</h5>
+                            <h5 style="color:#000000">Class Technologies Inc. $30 Million Series A Financial to Meet
+                                High Demand</h5>
                             <p>Class Technologies Inc., the company that created Class,...</p>
                         </div>
                     </div>
                     <div class="news">
                         <div class="pic"><img src="../assets/rect2.png" /></div>
                         <div class="wrap">
-                            <h5 style="color:#000000">Zoom's earliest investors are betting millions on a better Zoom for schools</h5>
+                            <h5 style="color:#000000">Zoom's earliest investors are betting millions on a better Zoom
+                                for schools</h5>
                             <p>Zoom was never created to be a consumer product. Nonetheless, the...</p>
                         </div>
                     </div>
                     <div class="news">
                         <div class="pic"><img src="../assets/rect3.png" /></div>
                         <div class="wrap">
-                            <h5 style="color:#000000">Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms</h5>
+                            <h5 style="color:#000000">Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom
+                                Classrooms</h5>
                             <p>This year, investors have reaped big financial returns from betting on zoom...</p>
                         </div>
                     </div>
@@ -87,35 +82,38 @@ export default {
 section {
     width: 100%;
     height: auto;
-    border: 3px dashed lightcoral;
 }
 
 div {
     width: 100%;
     height: auto;
-    border: 4px dashed sienna;
     background-color: #FFFFFF;
-    margin: 50px 0px;
+    margin: 3.125rem 0rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
 .mng {
-    width: 400px;
-    height: 220px;
-    /* border: 2px dashed coral; */
-    padding: 10px;
+    width: 25rem;
+    height: 13.75rem;
+    padding: 0.625rem;
     text-align: left;
     display: block;
-    margin-top: 100px;
+    margin-top: 6.25rem;
+    position: relative;
+}
+
+.mng:hover {
+    box-shadow: 0.0625rem 0.0625rem 0.375rem 0.0625rem #999999;
+    left: 1.2rem;
+    bottom: 1.2rem;
+    transition: .4s;
 }
 
 .secmng {
-    width: 450px;
-    height: 350px;
-    /* border: 1px solid red; */
-    background-color: burlywood;
+    width: 28.125rem;
+    height: 21.875rem;
 }
 
 .secmng .man {
@@ -126,21 +124,16 @@ div {
 .they {
     width: 100%;
     height: auto;
-    /* border: 2px solid royalblue; */
-    background-color: antiquewhite;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-
-
 .they1 {
-    width: 650px;
+    width: 37rem;
     height: auto;
-    border: 2px solid goldenrod;
     display: block;
-    padding: 0px;
+    padding: 0rem;
 }
 
 .rrre {
@@ -148,118 +141,49 @@ div {
     height: 100%;
 }
 
-/* .rrr {
-        width: 100px;
-        height: 100px;
-        background-color: aqua;
-        border: 10px solid red;
-        border-radius: 50%;
-        position: relative;
-        margin: 0px;
-        float: right;
-    }
-    
-    .ttt {
-        width: 92%;
-        height: 50%;
-        border: 4px solid firebrick;
-        display: inline-block;
-        border-radius: 9px;
-        position: relative;
-        bottom: 70px;
-        z-index: 6;
-        margin: 0px auto;
-        padding: 0px;
-    }
-    .sss {
-        width: 120px;
-        height: 120px;
-        border: 20px solid green;
-        border-radius: 15px;
-        position: relative;
-        bottom: 180px;
-        left: 5px;
-        z-index: 1;
-        margin: 0px;
-    }
-    .uuuu {
-        width: 90%;
-        height: 100%;
-        border: 2px solidr red;
-        border-radius: 10px;
-        position: relative;
-        left: 70px;
-        bottom: 50px;
-        z-index: 5;
-    }
-    .vvvv {
-        width: 80px;
-        height: 80px;
-        border: 10px solid forestgreen;
-        border-radius: 50%;
-        margin: 0px;
-        position: relative;
-        top: 100px;
-        left: 20px;
-        z-index: 6;
-    }
-    .wwww {
-        width: 120px;
-        height: 50%;
-        border: 1px solid green;
-        margin: 0px;
-    } */
-
-
-
-
 .they2 {
-    width: 400px;
-    height: 450px;
-    border: 1px solid violet;
+    width: 25rem;
+    height: 20.125rem;
     display: block;
-    padding: 100px 20px;
+    padding: 6.25rem 1.25rem;
     text-align: left;
 }
 
 .they2 h2 {
-    line-height: 10px;
+    line-height: 0.625rem;
 }
 
 .last {
     width: 100%;
     height: auto;
-    border: 4px solid hotpink;
-    background-color: azure;
     display: block;
 }
 
 .lastt {
     width: 95%;
     height: auto;
-    border: 5px solid green;
-    margin: 50px auto;
-    background-color: aquamarine;
+    margin: 3.125rem auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
 .sed {
-    width: 400px;
-    height: 450px;
-    border: 2px solid black;
-    background-color: thistle;
-    padding: 0px;
+    width: 25rem;
+    height: 28.125rem;
+    padding: 0rem;
     display: block;
     text-align: left;
 }
 
+.sed p {
+    font-size: 12px;
+}
+
 .sed .gogog {
-    padding: 6px 10px;
-    width: 90px;
-    /* border: 1px solid blue; */
-    border-radius: 30px;
+    padding: 0.375rem 0.625rem;
+    width: 5.625rem;
+    border-radius: 1.875rem;
     background-color: #f77e23;
     color: white;
     text-align: center;
@@ -267,9 +191,8 @@ div {
 
 .img {
     width: 100%;
-    height: 200px;
-    border: 2px solid lawngreen;
-    margin: 0px auto 30px;
+    height: 12.5rem;
+    margin: 0px auto 1.875rem;
 }
 
 .sed .img .lap {
@@ -278,19 +201,15 @@ div {
 }
 
 .sedd {
-    width: 500px;
-    height: 500px;
-    border: 8px solid red;
-    background-color: seashell;
+    width: 31.25rem;
+    height: 31.25rem;
     display: block;
 }
 
 .news {
     width: 99%;
-    height: 140px;
-    /* border: 3px solid turquoise; */
-    background-color: fuchsia;
-    margin: 15px auto;
+    height: 8.75rem;
+    margin: 0.9375rem auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -298,32 +217,34 @@ div {
 }
 
 .pic {
-    width: 200px;
-    height: 140px;
-    background-color: blanchedalmond;
-    /* border: 1px solid green; */
-    /* position: relative; */
-    margin: 0px 10px 0px 0px;
+    width: 12.5rem;
+    height: 8.75rem;
+    margin: 0rem 0.625rem 0rem 0rem;
 }
 
 .wrap {
-    width: 500px;
+    width: 31.25rem;
     height: auto;
-    border: 3px solid red;
-    padding: 0px;
+    padding: 0rem;
     display: block;
-    margin: 0px;
+    margin: 0rem;
 }
+
+.wrap p {
+    font-size: 0.75rem;
+}
+
 
 
 @media screen and (max-width: 450px) {
     div {
         flex-direction: column;
+        margin: 1rem auto;
     }
 
     .mng {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 0rem;
     }
 
     .secmng {
