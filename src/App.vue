@@ -27,17 +27,22 @@ export default {
 </script>
 
 <style>
+  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+   */
+
+   @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
   box-sizing: border-box;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 90%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   /* color: #2c3e50; */
-  color: #888888;
+  color: #666666;
   /* background-color: pink; */
   margin: 0px;
 }

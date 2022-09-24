@@ -2,7 +2,7 @@
     <section>
         <div>
             <div class="mng">
-                <h2>Class Management Tools For Educators.</h2>
+                <h2 style="color:#F77E23">Class Management <span style="color:#2f327d">Tools For Educators.</span></h2>
                 <p>Class provides tools to help run and manage the class such as Class Roster, Attendance, and more.
                     With the Gradebook, teachers can review and grade tests and quizzes in real-time.</p>
             </div>
@@ -24,20 +24,20 @@
                 <div class="sss"></div> -->
             </div>
             <div class="they2">
-                <h2>One-on-one</h2>
-                <h2>Discussions</h2>
+                <h2 style="color:#2f327d">One-on-one</h2>
+                <h2 style="color:#F77E23">Discussions</h2>
                 <p>Teachers and teacher assistants can talk with students privately without leaving the Zoom
                     environment.</p>
             </div>
         </div>
         <div class="last">
-            <h2>Latest News and Resources</h2>
+            <h2 style="color:#2f327d">Latest News and Resources</h2>
             <p>See the development that have occurred to Contentionary in the world</p>
             <div class="lastt">
                 <div class="sed">
                     <div class="img"><img class="lap" src="../assets/laptop.png" /></div>
                     <p class="gogog">NEWS</p>
-                    <h5>Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h5>
+                    <h5 style="color:#000000">Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution</h5>
                     <p>Class, launched less than a year ago by Blackboard co-founder Micheal Chasen, integrates
                         exclusively...</p>
                     <a href="#">
@@ -48,21 +48,21 @@
                     <div class="news">
                         <div class="pic"><img src="../assets/rect1.png" /></div>
                         <div class="wrap">
-                            <h5>Class Technologies Inc. $30 Million Series A Financial to Meet High Demand</h5>
+                            <h5  style="color:#000000">Class Technologies Inc. $30 Million Series A Financial to Meet High Demand</h5>
                             <p>Class Technologies Inc., the company that created Class,...</p>
                         </div>
                     </div>
                     <div class="news">
                         <div class="pic"><img src="../assets/rect2.png" /></div>
                         <div class="wrap">
-                            <h5>Zoom's earliest investors are betting millions on a better Zoom for schools</h5>
+                            <h5 style="color:#000000">Zoom's earliest investors are betting millions on a better Zoom for schools</h5>
                             <p>Zoom was never created to be a consumer product. Nonetheless, the...</p>
                         </div>
                     </div>
                     <div class="news">
                         <div class="pic"><img src="../assets/rect3.png" /></div>
                         <div class="wrap">
-                            <h5>Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms</h5>
+                            <h5 style="color:#000000">Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms</h5>
                             <p>This year, investors have reaped big financial returns from betting on zoom...</p>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ div {
 
 .mng {
     width: 400px;
-    height: 250px;
+    height: 220px;
     /* border: 2px dashed coral; */
     padding: 10px;
     text-align: left;
@@ -247,7 +247,7 @@ div {
 
 .sed {
     width: 400px;
-    height: 500px;
+    height: 450px;
     border: 2px solid black;
     background-color: thistle;
     padding: 0px;
@@ -257,9 +257,12 @@ div {
 
 .sed .gogog {
     padding: 6px 10px;
-    width: 70px;
-    border: 1px solid blue;
+    width: 90px;
+    /* border: 1px solid blue; */
     border-radius: 30px;
+    background-color: #f77e23;
+    color: white;
+    text-align: center;
 }
 
 .img {

@@ -64,12 +64,13 @@ section {
 
 .un {
     width: 400px;
-    height: 400px;
+    height: 350px;
     /* border: 1px solid darkgray; */
     /* background-color: burlywood; */
     /* display: inline-block; */
     text-align: left;
     padding: 50px 20px;
+    font-size: 12px;
 }
 
 .un h4 {
@@ -85,11 +86,12 @@ section {
 
 .deux {
     width: 300px;
-    height: 400px;
+    height: 350px;
+    font-size: 12px;
     /* border: 1px solid red; */
     /* background-color: greenyellow; */
     /* display: inline-block; */
-    padding: 50px 10px;
+    padding: 70px 10px;
     text-align: left;
 }
 
@@ -104,11 +106,12 @@ section {
 
 .trois {
     width: 350px;
-    height: 400px;
+    height: 350px;
+    font-size: 12px;
     /* border: 1px solid blue; */
     /* background-color: cornsilk; */
     /* display: inline-block; */
-    padding: 50px 10px;
+    padding: 70px 10px;
     text-align: left;
 }
 
@@ -133,16 +136,21 @@ section {
 @media screen and (max-width: 450px) {
     .un {
         width: 100%;
+        padding-bottom: 30px;
         /* border: 8px solid goldenrod; */
     }
 
     .deux {
         width: 100%;
+        height: auto;
+        padding-bottom: 30px;
         /* border: 8px solid red; */
     }
 
     .trois {
         width: 100%;
+        height: auto;
+        padding-bottom: 30px;
         /* border: 8px solid yellow; */
         border-bottom: 2px solid white;
     }

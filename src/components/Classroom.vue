@@ -1,8 +1,8 @@
 <template>
     <div>
         <div class="first">
-            <div class="cont">
-                <h4>Everything you can do in a physical classroom, you can do with Confectionary.</h4>
+            <div class="cont1">
+                <h4 style="color: #2F327D">Everything you can do in a physical classroom, <span style="color:#F77E23">you can do with Confectionary.</span></h4>
                 <p>Contentionary's school management software helps traditional and online schools manage scheduling,
                     attendance, payments and virtual classrooms all in one secure cloud-based system.</p>
                 <p><a href="">Learn more</a></p>
@@ -11,14 +11,14 @@
                 <img class="conn" src="../assets/confident.png" />
             </div>
         </div>
-        <h2>Our Features</h2>
+        <h2 style="color:#2F327D">Our <span style="color:#F77E23">Features</span></h2>
         <p>This very extraordinary feature, can make learning activities more efficient.</p>
         <div class="teachers">
             <div class="call">
                 <img class="pres" src="../assets/present.png" />
             </div>
             <div class="user">
-                <h3>A user interface designed for the classroom.</h3>
+                <h3 style="color:#2F327D">A <span style="color:#F77E23">user interface</span> designed for the classroom.</h3>
                 <div class="inter">
                     <div class="int">
                         <div class="icon"><img src="../assets/vectorf.png" /></div>
@@ -43,14 +43,14 @@
         </div>
         <div class="tools">
             <div class="one">
-                <h2>Tools For Teachers And Learners</h2>
+                <h2 style="color:#2F327D"><span style="color:#F77E23">Tools</span> For Teachers And Learners</h2>
                 <p>Class has a dynamic set of teaching tools built to be deployed and used during class. Teachers can
                     handout assignments in real-time for students to complete and submit.</p>
             </div>
             <div class="two"><img class="thinkk" src="../assets/think.png" /></div>
             <div class="one" style="padding: 0px"><img class="ita" src="../assets/italy.png" /></div>
             <div class="two">
-                <h2>Assessments, Quizzes, Tests</h2>
+                <h2 style="color:#2F327D">Assessments, <span style="color:#F77E23">Quizzes</span>, Tests</h2>
                 <p>Easily launch live assignments, quizzes, and tests. Student results are automatically entered in the
                     online gradebook.</p>
             </div>
@@ -102,6 +102,22 @@ div {
     background-color: azure;
     text-align: left;
     padding: 20px;
+}
+.cont1 {
+    width: 400px;
+    height: 250px;
+    border: 2px solid forestgreen;
+    background-color: azure;
+    text-align: left;
+    padding: 20px;
+}
+.cont:hover {
+    margin-left: 20px;
+    transition: .4s;
+}
+.cont1:hover {
+    margin-right: 20px;
+    transition: .4s;
 }
 
 .conn {
@@ -229,6 +245,11 @@ div {
     }
 
     .cont {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+    .cont1 {
         width: 100%;
         height: auto;
         margin-top: 10px;

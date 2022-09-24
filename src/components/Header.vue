@@ -4,7 +4,7 @@
             <div class="logo">
                 <img class="lll" src="../assets/logo.png" />
             </div>
-            <div class="menu" v-on:click="toggleMenu"></div>
+            <div class="menu" v-on:click="toggleMenu"><img src="../assets/menu.png" /></div>
             <ul class="navul">
                 <li>Home</li>
                 <li>Careers</li>
@@ -32,7 +32,7 @@
                 </ul>
             </div>
             <div class="first">
-                <h1><span style="color:tomato">Create</span> <span style="color:darkblue">your Online Academy in
+                <h1><span style="color:#F77E23">Create</span> <span style="color:#2F327D">your Online Academy in
                         minutes</span></h1>
                 <p>Share, sell, engage, support and impact your audience/ students using several Apps in Contentionary
                 </p>
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="services">
-            <h4 style="color: #888888">Trusted by 5,000+ Companies Worldwide.</h4>
+            <h4 class="head">Trusted by 5,000+ Companies Worldwide.</h4>
             <div class="scroller">
                 <div class="comp">
                     <div class="company"><img class="pic" src="../assets/airbnb.png" alt="air" /></div>
@@ -63,7 +63,8 @@ export default {
     name: 'Header',
     data() {
         return {
-            showMenu: false
+            showMenu: false,
+            image: '../assets/menu.png'
         }
     },
     methods: {
@@ -160,7 +161,9 @@ ul li {
     background-color: blanchedalmond;
     margin: 0px;
     padding: 70px 20px 0px;
-    border-radius: 0px 0px 70px 70px;
+    border-bottom-left-radius: 500px 90px;
+    border-bottom-right-radius: 500px 90px;
+    overflow: hidden;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -175,6 +178,10 @@ ul li {
     padding: 10px 20px;
     background-color: blanchedalmond;
     text-align: left;
+}
+.first:hover {
+    margin-top: 20px;
+    transition: .4s;
 }
 
 .join {
@@ -240,7 +247,9 @@ ul li {
     height: 100%;
     object-fit: contain;
 }
-
+.menu {
+    display: none;
+}
 
 
 @media screen and (max-width: 450px) {
@@ -250,16 +259,18 @@ ul li {
     }
 
     .logo {
-        margin: 1rem 5px;
+        margin: 1.4rem 5px;
         float: right;
     }
 
     .menu {
-        width: 40px;
-        height: 40px;
+        display: block;
+        width: 50px;
+        height: 50px;
+        color: white;
         background-color: gray;
         float: left;
-        margin: 1.4rem 2px;
+        margin: 1.4rem 2.5px;
         z-index: 1;
     }
 
@@ -274,8 +285,8 @@ ul li {
         opacity: 0.9;
         width: 250px;
         height: auto;
-        border: 2px solid whitesmoke;
-        border-radius: 0px 0px 30px 0px;
+        border: 2px solid bisque;
+        border-radius: 0px 0px 20px 0px;
         background-color: floralwhite;
         position: absolute;
         z-index: 1;
@@ -322,6 +333,17 @@ ul li {
     .scroller {
         border: 3px solid hotpink;
         overflow: auto;
+    }
+    ::-webkit-scrollbar {
+        height: 5px;
+        padding: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #65DAFF;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #F77E23;
     }
 
     .comp {

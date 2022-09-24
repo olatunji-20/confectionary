@@ -1,12 +1,12 @@
 <template>
     <div class="life">
-        <h2 class="med">All-in-one <span style="color: tomato">Cloud Software.</span></h2>
+        <h2 class="med" style="color:#2f327d">All-in-one <span style="color: #F77E23">Cloud Software.</span></h2>
         <p class="med">Contentionary is one powerful online software suite that combines all the tools needed to run a successful
             school or office.</p>
         <section class="cal">
             <div class="wrrrp">
                 <div class="bill">
-                    <div style="background-color: plum; padding-top: 13px;" class="round"><img src="../assets/vectorf.png" /></div>
+                    <div style="background-color: whitesmoke; padding-top: 13px;" class="round"><img src="../assets/vectorf.png" /></div>
                     <h3>Online Billing, invoicing & Contracts</h3>
                     <p>Simple and secure control of your organization's financial and legal transactions. Send
                         customized invoices and contracts.</p>
@@ -85,7 +85,7 @@
 
 
         <section class="what">
-            <h3>What is <span style="color: tomato">Contentionary?</span></h3>
+            <h2 style="color: #2f327d">What is <span style="color: #F77E23">Contentionary?</span></h2>
             <p>Contentionary is a platform that allows education to create online classes whereby they</p>
             <p>can store the course materials online; manage assignments, quizzes and exams;</p>
             <p>monitor due dates; grade results and provide students with feedback all in one place.</p>
@@ -169,7 +169,7 @@ div p {
     width: 100%;
     height: auto;
     border: 3px dashed green;
-    margin: 70px auto 30px;
+    margin: 30px auto 30px;
     display: inline-block;
     background-color: #FFFFFF;
     /* display: flex;
@@ -198,6 +198,7 @@ div p {
 
 .bill p {
     line-height: normal;
+    font-size: 13px;
 }
 
 .bill:hover {
@@ -323,6 +324,19 @@ div p {
         border: 3px solid blueviolet;
         overflow: auto;
     }
+    
+    ::-webkit-scrollbar {
+        height: 5px;
+        padding: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: #65DAFF;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: #F77E23;
+    }
+
 
 
     .test {
@@ -330,7 +344,7 @@ div p {
         height: auto;
         border: 4px solid lightcoral;
         padding: 50px 10px;
-        margin: 100px auto;
+        margin: 30px auto 30px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -347,6 +361,10 @@ div p {
         border-radius: 10px;
         box-shadow: 1px 1px 6px 1px #999999;
 
+    }
+    .billl:hover {
+        margin-top: 40px;
+        transition: .4s;
     }
     .clll {
         width: 150px;
