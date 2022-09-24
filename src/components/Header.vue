@@ -13,12 +13,12 @@
                 <li>Marketplace</li>
             </ul>
             <ul class="sec">
-                <li style="background-color: floralwhite;">Login</li>
-                <li style="background-color: tomato; color: floralwhite;">Create Account</li>
+                <li class="sec1">Login</li>
+                <li class="sec2">Create Account</li>
             </ul>
         </section>
 
-        <div id="land">
+        <div v-on:click="showMenu = false" id="land">
             <div class="menubar" v-show="showMenu">
                 <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos asperiores at aut consectetur nihil error incidunt nostrum voluptatibus quos possimus? Alias consequatur sit iure quos quod commodi quisquam cumque debitis?</p> -->
                 <ul>
@@ -43,7 +43,7 @@
             </div>
         </div>
         <div class="services">
-            <h4>Trusted by 5,000+ Companies Worldwide.</h4>
+            <h4 style="color: #888888">Trusted by 5,000+ Companies Worldwide.</h4>
             <div class="scroller">
                 <div class="comp">
                     <div class="company"><img class="pic" src="../assets/airbnb.png" alt="air" /></div>
@@ -90,7 +90,7 @@ export default {
 }
 
 .logo {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* background-color: pink; */
     width: 18.75rem;
     height: 3.25rem;
@@ -111,7 +111,10 @@ export default {
     padding: 2px;
     margin-top: 23px;
 }
-
+.navul  li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 ul li {
     width: auto;
     height: auto;
@@ -132,8 +135,25 @@ ul li {
     font-size: 14px;
     border-radius: 30px;
 }
-
-
+.sec1 {
+    background-color: floralwhite;
+}
+.sec1:hover {
+    background-color: tomato;
+    color: floralwhite;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.sec2 {
+    background-color: tomato;
+    color: floralwhite;
+}
+.sec2:hover {
+    background-color: floralwhite;
+    color: tomato;
+    transition: 0.4s;
+    cursor: pointer;
+}
 #land {
     width: 100%;
     height: 85vh;
@@ -160,13 +180,19 @@ ul li {
 .join {
     width: 150px;
     height: auto;
-    /* border: 1px solid red; */
-    background-color: rgb(204, 98, 37);
+    border: 0px solid red;
+    background-color: #F77E23;
     color: floralwhite;
     border-radius: 30px;
     margin-top: 30px;
     text-align: center;
     padding: 10px;
+}
+.join:hover {
+    background-color: white;
+    color: #F77E23;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .second {
@@ -245,9 +271,11 @@ ul li {
     }
     .menubar {
         /* border: 4px solid red; */
-        opacity: 0.8;
-        width: 300px;
+        opacity: 0.9;
+        width: 250px;
         height: auto;
+        border: 2px solid whitesmoke;
+        border-radius: 0px 0px 30px 0px;
         background-color: floralwhite;
         position: absolute;
         z-index: 1;
@@ -256,7 +284,7 @@ ul li {
         overflow: hidden;
         animation-name: drop;
         animation-timing-function: ease-in;
-        animation-duration: .8s;
+        animation-duration: .5s;
     }
 
     @keyframes drop{
@@ -280,7 +308,7 @@ ul li {
     }
 
     #land {
-        height: 70vh;
+        height: 80vh;
     }
 
     .second {

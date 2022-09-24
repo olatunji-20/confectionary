@@ -21,19 +21,19 @@
                 <h3>A user interface designed for the classroom.</h3>
                 <div class="inter">
                     <div class="int">
-                        <div class="icon"></div>
+                        <div class="icon"><img src="../assets/vectorf.png" /></div>
                         <div class="iconn">
                             <p>Teachers don't get lost in the grid view and have a dedicated Podiumm</p>
                         </div>
                     </div>
                     <div class="int">
-                        <div class="icon"></div>
+                        <div class="icon"><img src="../assets/calendar.png" /></div>
                         <div class="iconn">
                             <p>TA's and presenters can be moved to the front of the class.</p>
                         </div>
                     </div>
                     <div class="int">
-                        <div class="icon"></div>
+                        <div class="icon"><img src="../assets/vectorp.png" /></div>
                         <div class="iconn">
                             <p>Teachers can easily see all students and class data at one time.</p>
                         </div>
@@ -154,17 +154,18 @@ div {
     height: 95px;
     border: 1px solid red;
     margin: 5px auto;
-    padding: 0px;
+    padding: 5px;
     display: inline-block;
 }
 
 .inter .int .icon {
-    width: 23%;
-    height: 100%;
+    width: 80px;
+    height: 80px;
     background-color: salmon;
     border: 2px solid lawngreen;
+    border-radius: 50%;
     margin: 0px;
-    padding: 30px;
+    padding: 20px;
     display: inline;
 }
 
@@ -229,7 +230,7 @@ div {
 
     .cont {
         width: 100%;
-        height: 250px;
+        height: auto;
         margin-top: 10px;
     }
 
@@ -244,6 +245,11 @@ div {
     .user {
         width: 100%;
         border: 5px solid hotpink;
+        padding: 0px;
+    }
+    .inter .int .icon {
+        width: 20%;
+        height: 100%;
         padding: 0px;
     }
 

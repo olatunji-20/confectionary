@@ -52,7 +52,8 @@ export default {
 section {
     width: 100%;
     height: auto;
-    background-color: blue;
+    background-color: #2F327D;
+    color: white;
     border: 2px solid red;
     padding: 5px;
     display: flex;
@@ -64,8 +65,8 @@ section {
 .un {
     width: 400px;
     height: 400px;
-    border: 1px solid darkgray;
-    background-color: burlywood;
+    /* border: 1px solid darkgray; */
+    /* background-color: burlywood; */
     /* display: inline-block; */
     text-align: left;
     padding: 50px 20px;
@@ -78,15 +79,15 @@ section {
 .logg {
     width: 300px;
     height: 60px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 50px;
 }
 
 .deux {
     width: 300px;
     height: 400px;
-    border: 1px solid red;
-    background-color: greenyellow;
+    /* border: 1px solid red; */
+    /* background-color: greenyellow; */
     /* display: inline-block; */
     padding: 50px 10px;
     text-align: left;
@@ -104,8 +105,8 @@ section {
 .trois {
     width: 350px;
     height: 400px;
-    border: 1px solid blue;
-    background-color: cornsilk;
+    /* border: 1px solid blue; */
+    /* background-color: cornsilk; */
     /* display: inline-block; */
     padding: 50px 10px;
     text-align: left;
@@ -123,8 +124,8 @@ section {
 .copy {
     width: 100%;
     height: 70px;
-    background-color: fuchsia;
-    border: 2px dashed red;
+    background-color: #2F327D;
+    border-top: 2px solid white;
     padding: 10px;
     /* display: block; */
 }
@@ -132,18 +133,18 @@ section {
 @media screen and (max-width: 450px) {
     .un {
         width: 100%;
-        border: 8px solid goldenrod;
+        /* border: 8px solid goldenrod; */
     }
 
     .deux {
         width: 100%;
-        border: 8px solid red;
-        border-bottom: 4px solid green;
+        /* border: 8px solid red; */
     }
 
     .trois {
         width: 100%;
-        border: 8px solid yellow;
+        /* border: 8px solid yellow; */
+        border-bottom: 2px solid white;
     }
 
 }
