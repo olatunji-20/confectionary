@@ -273,9 +273,9 @@ ul li {
     }
 
     .logo {
-        margin: 1.4rem 3px;
+        margin: 5px 3px;
         width: 250px;
-        height: 60px;
+        height: 50px;
         float: right;
     }
     .menu {
