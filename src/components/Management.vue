@@ -106,8 +106,6 @@ div {
 
 .mng:hover {
     box-shadow: 0.0625rem 0.0625rem 0.375rem 0.0625rem #999999;
-    left: 1.2rem;
-    bottom: 1.2rem;
     transition: .4s;
 }
 

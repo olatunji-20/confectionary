@@ -176,8 +176,20 @@ export default {
     position: relative;
     bottom: 2.5rem;
     left: 6.5625rem;
+    animation-name: roll;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
 
+@keyframes roll {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(359deg)
+    }
+}
 .test {
     display: none;
 }
@@ -266,6 +278,7 @@ export default {
 
     .creator {
         margin: 0px;
+        height: 230px;
     }
 
 
@@ -308,10 +321,9 @@ export default {
     .billl {
         width: 280px;
         height: 280px;
-        margin: 60px auto 10px;
+        margin: 100px auto 10px;
         border-radius: 10px;
         box-shadow: 1px 1px 6px 1px #999999;
-
     }
 
     .billl:hover {

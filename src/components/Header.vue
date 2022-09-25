@@ -1,11 +1,11 @@
 <template>
     <div>
         <section class="navbar">
-            <div class="logo">
-                <img class="lll" src="../assets/logo.png" />
-            </div>
             <div class="menu" v-on:click="toggleMenu">
                 <p v-text="showMenu ? '⨉' : 'Ξ' "></p>
+            </div>
+            <div class="logo">
+                <img class="lll" src="../assets/logo.png" />
             </div>
             <ul class="navul">
                 <li>Home</li>
@@ -150,6 +150,10 @@ ul li {
 .sec2 {
     background-color: tomato;
     color: floralwhite;
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .sec2:hover {
@@ -192,12 +196,26 @@ ul li {
     width: 9.375rem;
     height: auto;
     border: 0rem solid red;
-    background-color: #F77E23;
     color: floralwhite;
     border-radius: 1.875rem;
     margin-top: 1.875rem;
     text-align: center;
     padding: 0.625rem;
+    animation-name: change;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes change {
+    0% {
+        background-color: #F77E23;
+        color: whitesmoke;
+    }
+    100% {
+        background-color: whitesmoke;
+        color: #F77E23;
+    }
 }
 
 .join:hover {
@@ -255,14 +273,15 @@ ul li {
     }
 
     .logo {
-        margin: 1.4rem 5px;
+        margin: 1.4rem 3px;
+        width: 250px;
+        height: 60px;
         float: right;
     }
-
     .menu {
         display: block;
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
         color: white;
         float: left;
         margin: 1.4rem 2.5px;
@@ -272,7 +291,7 @@ ul li {
     .menu p {
         padding: 0px;
         font-weight: bolder;
-        font-size: 28px;
+        font-size: 20px;
         line-height: 0px;
         color: #F77E23;
     }
