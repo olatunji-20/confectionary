@@ -2,9 +2,9 @@ FROM node:lts-alpine
 
 EXPOSE 2500
 
-RUN mkdir -p /home/node/app
-
 USER node
+
+RUN mkdir -p /home/node/app
 
 WORKDIR /home/node/app
 
