@@ -1,17 +1,17 @@
 FROM node:lts-alpine
 
-EXPOSE 2500
+RUN mkdir /app && chown node:node /app
+
+WORKDIR /app
 
 USER node
 
-RUN mkdir -p /home/node/app
-
-WORKDIR /home/node/app
-
-COPY ./package*.json .
+COPY --chown=node:node ./package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY --chown=node:node . .
+
+EXPOSE 8080
 
 CMD ["npm", "run", "serve"]
